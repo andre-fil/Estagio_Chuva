@@ -15,7 +15,7 @@ left: 0%;
 right: 0%;
 top: 0%;
 bottom: 0%;
-width: 268px;
+width: 220px;
 height: 68px;
 
 
@@ -23,11 +23,12 @@ background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
 }
 
 .retangulo > p{
-    position: absolute;
+position: absolute;
 left: 9.09%;
 right: 10%;
 top: 0%;
 bottom: 0%;
+
 
 font-family: 'Roboto';
 font-style: normal;
@@ -39,4 +40,53 @@ align-items: center;
 text-align: center;
 
 color: #FFFFFF;
+}
+
+.img{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 69px;
+bottom: 0%;
+width: 220px;
+height: 258px;
+
+
+}
+
+ul{
+   position: absolute;
+   top:326px;
+padding-left: 0%;
+   list-style: none;
+   
+}
+.item{
+
+top: 0%;
+bottom: 5.71%;
+width: 220px;
+height: 33px;
+background: #FFFFFF;
+
+
+}
+
+.item > p{
+   
+left: 10.91%;
+right: 44.09%;
+top: 20%;
+bottom: 25.71%;
+
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 19px;
+color: #725C5C;
+}
+
+nav{
+    position: absolute;
 }
