@@ -1,0 +1,42 @@
+header{
+position: absolute;
+width: 1146px;
+height: 68px;
+left: 0px;
+top: 0px;
+padding-left: 268px;
+
+background: #FDF1EB;
+}
+
+.retangulo{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+width: 268px;
+height: 68px;
+
+
+background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+}
+
+.retangulo > p{
+    position: absolute;
+left: 9.09%;
+right: 10%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
