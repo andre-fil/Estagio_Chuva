@@ -23,7 +23,6 @@ header{
 
 #cabeçario{
     padding-left: 256px;
-   
     
 }
 .subtitle{
@@ -76,6 +75,7 @@ color: #725C5C;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 #linguagem{
    
@@ -88,7 +88,7 @@ border: 1px solid #CCCCCC;
 border-radius: 3px;
 margin-top: 17px;
 margin-bottom: 17px;
-
+margin-left: 60px;
 display: grid;
 grid-template-columns: 1fr 2fr 1fr;
 
@@ -131,7 +131,7 @@ margin-left: 3px;
 }
 
 #perfil{
-    margin-left: -87px;
+    margin-left: 10px;
 }
 .boas_vindas{
 
@@ -164,17 +164,19 @@ color: #333333;
 }
 #image_perfil{
 position: absolute;
-left: 93.28%;
+
 right: 2.53%;
 top: 19px;
 bottom: 27.94%;
 border-radius: 50%;
+margin-left: 20px;
 }
 
 
 .aside{
 left: 0px;
 top: 0px;
+width: 222px;
 position: fixed;
 height: 100%;
 box-shadow: 20px 12px 13px -14px rgba(222,222,222,0.44);
@@ -212,6 +214,11 @@ padding-left: 2%;
 
 background: #FFFFFF;
 border-bottom: 2px solid  #8e737336;
+width: 220px;
+margin-left: 0;
+
+
+
 
 
 }
@@ -221,25 +228,29 @@ border-bottom: 2px solid  #8e737336;
 margin-left:20px;
 font-family: 'Quicksand', sans-serif;
 font-style: normal;
-font-weight: 500, medium;
+vertical-align: baseline;
+font-weight: 500;
 font-size: 15px;
 line-height: 19px;
 color: #725C5C;
-padding-left: 24px;
+margin-left: 24px;
 padding-top: 7px;
 padding-bottom: 7px;
+letter-spacing: normal;
 }
 
 
 main{
 display: grid;
-grid-template-columns: 2fr 8fr;
+
+margin-left: 265px;
 
 }
 
 .conteudo{
 
 grid-column-start: 2;
+bottom: 34px;
 
 }
 
@@ -262,6 +273,188 @@ grid-column-start: 2;
     /* or 125% */
     
     letter-spacing: 0.05em;
-    
+    margin-bottom: 19px;
     color: #ED7839;
+}
+
+.img_palestra{
+    width: 783px;
+    height: 439px;
+    border-radius: 3px;
+}
+
+.um{
+    position: relative;
+}
+#sete{
+    position: absolute;
+    top:35px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 25px;
+margin-left: 32px;
+/* or 104% */
+
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+}
+#img_rosto{
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    bottom:65px;
+
+}
+#circle{
+    position: absolute;
+    left: 34.9px;
+    bottom:60px;
+}
+
+.nome_apresent{
+position: absolute;
+width: 100%;
+left: 134px;
+right: 473px;
+bottom:92px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 34px;
+line-height: 25px;
+/* or 74% */
+
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+}
+
+.universidade{
+position: absolute;
+width: 100%;
+height: 27px;
+left: 136px;
+right: 506px;
+bottom:60px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 25px;
+/* or 125% */
+
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+}
+
+#detalhes{
+    
+    margin-left: 31px;
+    width: 242px;
+    height: 512px;
+}
+
+.logos{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    margin-left: 25px;
+}
+
+#download{
+    background-color: #ED7839;
+    width: 120px;
+    height: 31px;
+    margin-right: 5px;
+    display: grid;
+    flex-direction: column;
+    
+}
+#download > img{
+    width: 19px;
+    height: 19px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 12px;
+}
+
+.download{
+    position: absolute;
+    margin-left: 36px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Grayscale-white */
+
+color: #FFFFFF;
+
+border-radius: 4px;
+
+}
+#star{
+    background-color: #ED7839;
+    width: 41px;
+    height: 31px;
+    margin-right: 5px;
+}
+
+.img_star{
+    width: 19px;
+    height: 19px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 12px;
+}
+#doi{
+    background-color: #ED7839;
+    width: 41px;
+    height: 31px;
+    margin-right: 5px;
+}
+.img_doi{
+    width: 19px;
+    height: 19px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 12px;
+}
+
+.citação{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 25px;
+/* identical to box height, or 179% */
+
+text-align: right;
+margin-top: 12px;
+margin-bottom: 5px;
+letter-spacing: 0.05em;
+
+color: #ED7839
+}
+
+.cabeça_detalhes{
+    width: 242px;
+    height: 45px;
+    background-color: #FDF1EB;
+
 }
