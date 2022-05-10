@@ -355,11 +355,13 @@ color: #FFFFFF;
 
 }
 
-#detalhes{
+#logos-download{
     
     margin-left: 31px;
     width: 242px;
-    height: 512px;
+    height: 93px;
+   
+    
 }
 
 .logos{
@@ -452,9 +454,153 @@ letter-spacing: 0.05em;
 color: #ED7839
 }
 
+#detalhes{
+    width: 242px;
+    height: 439px;
+    border: 1px solid #ECECEC;
+
+}
+
 .cabeça_detalhes{
     width: 242px;
     height: 45px;
     background-color: #FDF1EB;
+
+}
+
+.corpo_detalhes{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+margin-left: 15px;
+padding-top: 11px;
+
+
+
+color: #4E4E4E;
+}
+
+.tipo_apresent{
+margin-left: 15px;
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+margin-bottom: 15px;
+
+/* or 14px */
+
+letter-spacing: 0.02em;
+margin-top: 15px;
+color: #333333;
+}
+
+.autores{
+margin-left: 15px;
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+margin-bottom: 30px;
+line-height: 22.75px;
+
+
+/* or 14px */
+
+letter-spacing: 0.02em;
+
+color: #333333;
+}
+
+.instituicoes{
+    margin-left: 15px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 16px;
+    
+    /* or 14px */
+    
+    letter-spacing: 0.02em;
+    
+    color: #adadad;
+    }
+.bold{
+    font-weight: 700;
+
+}
+/* parte do resumo*/
+
+#resumo{
+    margin-top: 30px;
+    min-height: 189px;
+    word-wrap: break-word;
+    border: 1px solid #ECECEC;
+}
+.header_resumo{
+    width: 100%;
+    height: 45px;
+    background-color: #FDF1EB;
+}
+
+.header_resumo > p{
+font-family: 'Roboto';
+padding-top: 10px;
+margin-left: 15px;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+
+color: #4d3535;
+}
+
+.conteudo_resumo{
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 23px;
+letter-spacing: 0.02em;
+margin-top: 15px;
+margin-left: 15px;
+color: #5C5C5C;
+
+
+
+/* Inside auto layout */
+
+
+}
+
+.ver_mais{
+    color: #ED7839;
+    font-weight: 700;
+}
+
+.hidden{
+    display: none;
+
+}
+.hidden_text{
+line-height: 23px;
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 23px;
+letter-spacing: 0.02em;
+margin-top: 15px;
+padding-top: 25px;
+color: #5C5C5C;
 
 }
