@@ -5,11 +5,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <script src="alternative.js"></script>
+    <script src="script.js"></script>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="alternative.css">
+   <link rel="stylesheet" href="style.css">
     <title>Index</title>
 </head>
 <body>
@@ -21,15 +21,15 @@
         </div>
         <div id="configurações">
             <div id="linguagem">
-                <img src="language image.png" alt="logo de escolha de linguagem" srcset="" id="img_language">
+                <img src="images/language image.png" alt="logo de escolha de linguagem" srcset="" id="img_language">
                 <p>PT, BR</p>
-                <img src="dropdown.png" alt="logo dropdown" srcset="" id="img_drop">
+                <img src="images/dropdown.png" alt="logo dropdown" srcset="" id="img_drop">
             </div>
 
             <div id="perfil">
                 <p class="boas_vindas">Bem Vindo!</p>
                 <p class="email">alguem12@galoascience.com</p>
-                <img src="image.png" alt="perfil" srcset="" id="image_perfil">
+                <img src="images/image.png" alt="perfil" srcset="" id="image_perfil">
             </div>
         </div>
         
@@ -42,13 +42,16 @@
                 <p>SLACA 2019</p>
             </div>
             <nav>
-                <div class="img"><img src="dewey 4.png" alt="" srcset=""></div>
+                <div class="img"><img src="images/dewey 4.png" alt="" srcset=""></div>
                 <ul>
                     <li class="item"><p>Apresentação</p></li>
                     <li class="item"><p>Comitês</p></li>
                     <li class="item"><p>Autores</p></li>
                     <li class="item"><p>Eixos Temáticos</p></li>
-                    <li class="item"><p>Trabalhos</p></li>
+                    <li class="item" id="orange_item">
+                        <div id="lado">
+
+                        </div><p>Trabalhos</p></li>
                     <li class="item"><p>Contato</p></li>
 
                 </ul>
@@ -62,10 +65,10 @@
                         Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP 
                     </p>
                     <div class="um">
-                        <img src="dewey 2.png" alt="imagem banner" srcset="" class="img_palestra">
+                        <img src="images/dewey 2.png" alt="imagem banner" srcset="" class="img_palestra">
                         <p id="sete">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </p>
-                        <img src="rosto.png" alt="imagem rosto" srcset="" id="img_rosto">
-                        <img src="Outline.png" alt="contorno" srcset="" id="circle">
+                        <img src="images/rosto.png" alt="imagem rosto" srcset="" id="img_rosto">
+                        <img src="images/Outline.png" alt="contorno" srcset="" id="circle">
                         <p class="nome_apresent">Beatriz Christiane Melo</p>
                         <p class="universidade">FCA / Universidade Estadual de Campinas</p>
                     </div>
@@ -74,14 +77,14 @@
                 <div id="logos-download">
                     <div class="logos">
                         <div id="download">
-                            <img src="seta.png" alt="download">
+                            <img src="images/seta.png" alt="download">
                             <p class="download">Download</p>
                         </div>
                         <div id="star">
-                            <img src="star.png" alt="logo estrela" srcset="" class="img_star">
+                            <img src="images/star.png" alt="logo estrela" srcset="" class="img_star">
                         </div>
                         <div id="doi">
-                            <img src="doi.png" alt="imagem doi" srcset="" class="img_doi">
+                            <img src="images/doi.png" alt="imagem doi" srcset="" class="img_doi">
                         </div>
                     </div>
                     <p class="citação">COMO CITAR ESSE TRABALHO?</p>
@@ -152,8 +155,8 @@
                     </div>
                     <div class="footer_conteudo">
                         <div class="img_footer">
-                            <img src="bolder.png" alt="bolder image" srcset="">
-                            <img src="italic.png" alt="italic image" srcset="">
+                            <img src="images/bolder.png" alt="bolder image" srcset="">
+                            <img src="images/italic.png" alt="italic image" srcset="">
                         </div>
                         <div class="btn_footer" onclick="Enviar()">
                             <p>Enviar</p>
@@ -167,7 +170,7 @@
                     <p class="title_topico">
                         Compartilhe suas ideias ou dúvidas com os autores!
                     </p>
-                    <img src="icones.png" alt="icones" srcset="" id="img_icones">
+                    <img src="images/icones.png" alt="icones" srcset="" id="img_icones">
                     <p class="subtitle_discussao">
                         Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
                     </p>
@@ -186,19 +189,90 @@
                     <p class="outros_trab">
                         Descubra outros trabalhos!
                     </p>
-                    <div class="btn_outroTop" onclick="enviarNova()">
+                    <div class="btn_outroTop" onclick="enviarNova()" >
                         <p>criar novo tópico</p>
+                    </div>
+
+                </div>
+                <div class="comentarios">
+                    <div class="comentario_sumir" id="after_coment"
+                    >
+                        <div class="cinza" >
+                            <img src="images/verifica.png" alt="verificação" srcset="" class="img_verifica">
+                            <p class="aguarda_ver">
+                                Aguardando feedback dos autores
+                            </p>
+                            <p class="edita_top">
+                                Editar tópico
+                            </p>
+
+                        </div>
+                        <p class="assunto_coment">Assunto da pergunta aparece aqui</p>
+                        <p class="nome_coment">Carlos Henrique Santos</p>
+                        <p class="corpo_coment">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                        <img src="images/sharing.png" alt="icones de compartilhamento" srcset="" class="img_sharing">
+                    
+                    </div>
+                    <div class="comentario">
+                        <p class="assunto_coment">Assunto da pergunta aparece aqui</p>
+                        <p class="nome_coment">Carlos Henrique Santos</p>
+                        <p class="corpo_coment">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                        <img src="images/sharing.png" alt="icones de compartilhamento" srcset="" class="img_sharing">
+                    </div>
+                    <div class="comentario" onclick="apareceResposta()" >
+                        <p class="assunto_coment">Assunto da pergunta aparece aqui</p>
+                        <p class="nome_coment">Carlos Henrique Santos</p>
+                        <p class="corpo_coment">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                        <img src="images/sharing.png" alt="icones de compartilhamento" srcset="" class="img_sharing" 
+                        >
+
+                        <div class="hidden_resposta" id="resposta_complemento">
+                            <div class="resp1">
+                                <p class="resp_name">Adriano da Silva</p>
+                                <p class="assunto_resposta">
+                                    Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                </p>
+                            </div>
+                            <div class="resp2">
+                                <p class="resp_name">Carlos Henrique Santos</p>
+                                <p class="assunto_resposta">
+                                    Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. <br>
+                                    <br>
+                                    Obrigada pela resposta, muito interessante o seu trabalho! 
+                                </p>
+                            </div>
+                            <div class="resp3">
+                                <p class="resp_name">
+                                    Carmila Ferreira Andrade
+                                </p>
+
+                                <p class="assunto_resposta">
+                                    Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. <br>
+                                    <br>
+                                    Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                </p>
+                            </div>
+                            <div class="resp4">
+                                <p class="resp_name">
+                                    Ana Carolina
+                                </p>
+                                <p class="assunto_resposta">
+                                    Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                </p>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
             </div>
 
-           
         </section>
-
     </main>
     
    
-    <footer></footer>
+    <footer>
+        <img src="images/imagem - footer.png" alt="imagem footer" srcset="" id="img_footer">
+    </footer>
 </body>
 </html>
