@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
 
 
@@ -8,9 +7,16 @@
     box-sizing: border-box;
 }
 
+.background-header {
+    height: 68px;
+    width: 100%;
+    background-color: #FDF1EB;
+}
+
 /*Cabeçario e elementos que compõem o cabeçário*/
 header{
-
+    position: absolute;
+    top: -68px;
     width: 100%;
     height: 68px;
     margin-bottom: 30px;
@@ -18,20 +24,11 @@ header{
     background: #FDF1EB;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-
-    
-    
 }
 
-#cabeçario{
-    padding-left: 256px;
-    
-}
 .subtitle{
     width: 391px;
     height: 16px;
-    left: 36px;
-    top: 5px;
     margin-top: 5px;
     font-family: 'Roboto';
     font-style: normal;
@@ -76,7 +73,7 @@ header{
 #configurações{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     
 }
 #linguagem{
@@ -127,17 +124,25 @@ header{
 }
 
 #perfil{
+    display: flex;
+    align-items: center;
     margin-left: 10px;
 }
+
+#image_perfil{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
 .boas_vindas{
 
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    margin-top: 17px;
     text-align: right;
-    margin-right: 70px;
     color: #333333;
 }
 
@@ -150,21 +155,10 @@ header{
     /* identical to box height */
 
     text-align: right;
-    margin-right: 70px;
-
     color: #333333;
 
 }
-#image_perfil{
-    position: absolute;
 
-    right: 2.53%;
-    top: 19px;
-    bottom: 27.94%;
-    border-radius: 50%;
-
-    margin-right: 0px;
-}
 
 
 .aside{
@@ -238,15 +232,14 @@ ul{
 }
 #lado{
     width: 3px;
-    height: 33px;
+    height: 40px;
     background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
 }
 
 main{
+    position: relative;
     display: grid;
-
     margin-left: 265px;
-
 }
 
 .conteudo{
@@ -260,7 +253,7 @@ main{
 .img-details{
     display: grid;
     grid-template-columns: 2fr 0.8fr;
-
+    margin-top: 20px;
 }
 
 
@@ -582,8 +575,12 @@ main{
 }
 
 .criar_topico{
-    height: 248px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 .title_topico{
     font-family: 'Roboto';
     font-style: normal;
@@ -591,14 +588,13 @@ main{
     font-size: 18px;
     line-height: 21px;
     margin-top: 15px;
-    margin-left: 324.5px;
     color: #ED7839;
 
 }
 
 #img_icones{
     margin-top: 27px;
-    margin-left: 402.5px;
+    width: 300px;
 }
 
 .subtitle_discussao{
@@ -609,8 +605,6 @@ main{
     line-height: 19px;
     text-align: center;
     margin-top: 35.06px;
-    width: 629px;
-    margin-left: 216.5px;
     color: #595959;
 }
 
@@ -621,7 +615,6 @@ main{
     width: 133px;
     height: 32px;
     border-radius: 4px;
-    margin-left: 447px;
     margin-top: 14px;
     cursor: pointer;
 }
@@ -708,22 +701,27 @@ color: #FFFFFF;
     width: 97%;
     background-color: #EAF1F2;
     border: 1px solid #CCCCCC;
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
   
+}
+
+.img_footer {
+    display: flex;
 }
 
 .img_footer > img{
     margin-top: 11px;
     margin-left: 29.3px;
 }
+
 .btn_footer{
     width: 205.1px;
     height: 31px;
     background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
     border-radius: 0px 0px 4px 0px;
-    margin-left: 700.7px;
     cursor: pointer;
 }
 
@@ -966,8 +964,6 @@ color: #FFFFFF;
     border-radius: 0px;
 }
 
-
-
 .resp3{
     height: 184px;
     background: #F8F8F8;
@@ -990,3 +986,163 @@ color: #FFFFFF;
     margin-left: 220px;
     margin-top: 60px ;
 }
+
+@media (max-width: 1300px) {
+    
+    .background-header {
+        height: 140px;
+    }
+
+    header {
+        top: -130px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #configurações {
+        display: flex;
+        gap: 2rem;
+    } 
+
+    #configurações #linguagem {
+        margin-left: 0px;
+    }
+
+    #perfil {
+        flex-direction: row-reverse;
+    }
+
+    #perfil #image_perfil {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    #configurações #perfil .boas_vindas {
+        text-align: left;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .background-header {
+        display: none;
+    }
+
+    header {
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        height: 150px;
+        width: 100%;
+    }
+    /*  */
+
+   
+
+    /*  */
+    #cabeçario {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    main {
+        flex-direction: column;
+        display: flex;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .aside {
+        padding: 25px;
+        margin-top: 140px;
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .conteudo {
+        margin-right: 0px;
+    }
+
+    .img-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #detalhes {
+        margin-bottom: 100px;
+    }
+
+    #resumo {
+        margin-top: 450px;
+    }
+
+    #img_footer {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    nav, ul {
+        display: flex;
+    }
+
+    ul li.item {
+        width: 100%;
+        height: 40px;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding-right: 5px;
+    }
+    
+    
+    .item > p {
+        padding: 0;
+    }
+    .img-details .um .nome_apresent, .universidade{
+        width: 450px;
+    }  
+    
+    .img-details, #resumo, #discussao {
+        padding: 30px;
+    }
+    
+    
+}
+@media (max-width: 900px) {
+
+    .tema_pag{
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        
+    
+    
+        color: #725C5C;
+    
+    }
+    nav, ul {
+        display: block;
+    }
+
+    ul li.item {
+        width: 100%;
+        height: 40px;
+        border: none;
+        display: flex;
+        
+    
+    }
+
+    .btn_outroTop{
+        text-align: center;
+        width: 130px;
+        margin-left: 250px;
+    }
+}
+

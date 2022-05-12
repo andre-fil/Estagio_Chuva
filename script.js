@@ -28,7 +28,7 @@ function apareceResposta(){
         document.getElementById("resposta_complemento").style.display = 'none';
         document.getElementById("discussao").style.height = '670px';
     } else{ document.getElementById("resposta_complemento").style.display = 'block';
-    document.getElementById("discussao").style.height = '1250px';
+    document.getElementById("discussao").style.height = '1270px';
     }
 
     
